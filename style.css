@@ -1,0 +1,98 @@
+html {
+  background-color: #272822;
+  color: #c2b994;
+  overflow-x: hidden;
+}
+
+button {
+  height:  20px;
+  display: inline-block;
+  background-color: transparent;
+  color: #4e83a5;
+  border: 0px;
+  font-size: 25px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+
+.heading {
+  text-align: center;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.task {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  width: 300px;
+  height:  200px;
+}
+
+.logo {
+  width: 350px;
+  height: 350px;
+}
+
+.cards {
+  text-align: center;
+}
+
+.o-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 0;
+  border: 0px;  
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.o-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.unflip, .flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.unflip {
+  color: black;
+}
+
+.flip {
+  background-color: blue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.o-card {
+  padding: 30px;
+  display: inline-block;
+  margin: 0;
+}
+
+#ex {
+  text-align: center;
+}
